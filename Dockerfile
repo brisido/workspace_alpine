@@ -4,7 +4,7 @@ FROM alpine:3.12
 # Install apps
 RUN \
   apk update && \ 
-  apk add py-pip vim htop zip less groff tree jq openssl bash shadow neofetch && \
+  apk add py-pip vim htop zip less groff tree jq openssl bash shadow neofetch git && \
   pip install awscli && \
   wget https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip && \
   unzip terraform_0.12.21_linux_amd64.zip -d /bin && \
